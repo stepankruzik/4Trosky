@@ -4,14 +4,14 @@ var on_ground = place_meeting(x, y + 1, obj_ground) ||
 
 x_speed = 0;
 
-if (keyboard_check(ord("A"))) {
+if (keyboard_check(vk_left)) {
     x_speed = -2;
 }
-else if (keyboard_check(ord("D"))) {
+else if (keyboard_check(vk_right)) {
     x_speed = 2;
 }
 
-if ((keyboard_check_pressed(ord("W"))) && on_ground) {
+if ((keyboard_check_pressed(vk_up)) && on_ground) {
     y_speed = -8;
 }
 
@@ -34,7 +34,7 @@ if (y_speed > 0 && (place_meeting(x, y + y_speed, obj_ground) ||
 }
 
 // Kontrola, jestli postava vstoupila na obj_water
-if (place_meeting(x, y, obj_water)) {
+if (place_meeting(x, y, obj_lava)) {
     instance_destroy(); // Zničí instanci postavy
 }
 
