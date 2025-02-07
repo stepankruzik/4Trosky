@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_ground_stone",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_ground_stone",
   "overriddenProperties":[],
@@ -15,11 +17,11 @@
   "physicsDensity":0.5,
   "physicsFriction":0.2,
   "physicsGroup":1,
-  "physicsKinematic":false,
+  "physicsKinematic":true,
   "physicsLinearDamping":0.1,
-  "physicsObject":false,
+  "physicsObject":true,
   "physicsRestitution":0.1,
-  "physicsSensor":false,
+  "physicsSensor":true,
   "physicsShape":1,
   "physicsShapePoints":[
     {"x":0.0,"y":0.0,},

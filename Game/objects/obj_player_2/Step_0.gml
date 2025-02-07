@@ -4,6 +4,7 @@ var on_ground = place_meeting(x, y + 1, obj_ground) ||
 
 x_speed = 0;
 
+// Pohyb postavy
 if (keyboard_check(vk_left)) {
     x_speed = -2;
 }
@@ -15,14 +16,31 @@ if ((keyboard_check_pressed(vk_up)) && on_ground) {
     y_speed = -8;
 }
 
+// Gravitace
 y_speed += 0.4;
 
+// Kontrola kolizí při pohybu na osách X a Y
 if (place_meeting(x + x_speed, y, obj_ground) || 
-    place_meeting(x + x_speed, y, obj_ground_stone) || 
     place_meeting(x + x_speed, y, obj_ground_stonefill)) {
     x_speed = 0;
 }
 
+// Tlačení kamene (obj_ground_stone)
+if (place_meeting(x + x_speed, y, obj_ground_stone)) {
+    var stone = instance_place(x + x_speed, y, obj_ground_stone);
+    if (stone != noone) {
+        // Pokud je před kamenem volné místo, posuň ho
+        if (!place_meeting(stone.x + x_speed, stone.y, obj_ground) && 
+            !place_meeting(stone.x + x_speed, stone.y, obj_ground_stonefill)) {
+            stone.x += x_speed; // Posuň kámen
+        } else {
+            x_speed = 0; // Nemůžeme kámen posunout
+        }
+    }
+}
+
+
+// Kontrola pro osu Y
 if (y_speed > 0 && (place_meeting(x, y + y_speed, obj_ground) || 
                     place_meeting(x, y + y_speed, obj_ground_stone) || 
                     place_meeting(x, y + y_speed, obj_ground_stonefill))) {
@@ -36,7 +54,10 @@ if (y_speed > 0 && (place_meeting(x, y + y_speed, obj_ground) ||
 // Kontrola, jestli postava vstoupila na obj_water
 if (place_meeting(x, y, obj_lava)) {
     instance_destroy(); // Zničí instanci postavy
+    // Alternativně můžete restartovat místnost:
+    // room_restart();
 }
 
+// Aktualizace pozice postavy
 x += x_speed;
 y += y_speed;
