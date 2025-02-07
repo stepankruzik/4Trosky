@@ -31,6 +31,8 @@ if (place_meeting(x + x_speed, y, obj_ground_stone)) {
     if (stone != noone) {
         // Pokud je před kamenem volné místo, posuň ho
         if (!place_meeting(stone.x + x_speed, stone.y, obj_ground) && 
+			!place_meeting(stone.x + x_speed, stone.y, obj_player) &&
+			!place_meeting(stone.x + x_speed, stone.y, obj_player_2) &&
             !place_meeting(stone.x + x_speed, stone.y, obj_ground_stonefill)) {
             stone.x += x_speed; // Posuň kámen
         } else {
