@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"SKYDROP",
-    "path":"SKYDROP.yyp",
+    "name":"Game",
+    "path":"Game.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

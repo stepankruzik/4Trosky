@@ -1,6 +1,7 @@
 var on_ground = place_meeting(x, y + 1, obj_ground) || 
                 place_meeting(x, y + 1, obj_ground_stone) ||
-                place_meeting(x, y + 1, obj_ground_stonefill);
+				place_meeting(x, y + y_speed, obj_platformbutton) ||
+				place_meeting(x, y + 1, obj_ground_stonefill);
 
 x_speed = 0;
 
@@ -32,6 +33,7 @@ if (place_meeting(x + x_speed, y, obj_ground_stone)) {
         // Pokud je před kamenem volné místo, posuň ho
         if (!place_meeting(stone.x + x_speed, stone.y, obj_ground) &&
 			!place_meeting(stone.x + x_speed, stone.y, obj_player) &&
+			!place_meeting(stone.x + x_speed, stone.y, obj_platformbutton) &&
 			!place_meeting(stone.x + x_speed, stone.y, obj_player_2) && 
             !place_meeting(stone.x + x_speed, stone.y, obj_ground_stonefill)) {
             stone.x += x_speed; // Posuň kámen
@@ -43,15 +45,21 @@ if (place_meeting(x + x_speed, y, obj_ground_stone)) {
 
 // Kolize na ose Y (gravitace)
 if (y_speed > 0 && (place_meeting(x, y + y_speed, obj_ground) || 
-                    place_meeting(x, y + y_speed, obj_ground_stone) || 
+                    place_meeting(x, y + y_speed, obj_ground_stone) ||
+					place_meeting(x, y + y_speed, obj_platformbutton) ||
                     place_meeting(x, y + y_speed, obj_ground_stonefill))) {
     y_speed = 0; // Zastavení pohybu při dopadu
 } else if (y_speed < 0 && (place_meeting(x, y + y_speed, obj_ground) || 
-                           place_meeting(x, y + y_speed, obj_ground_stone) || 
+                           place_meeting(x, y + y_speed, obj_ground_stone) ||
+						   place_meeting(x, y + y_speed, obj_platformbutton) ||
                            place_meeting(x, y + y_speed, obj_ground_stonefill))) {
     y_speed = 0; // Zastavení pohybu při nárazu hlavou
 }
 
+// Pokud se hráč nachází v platformě, posuneme ho nahoru
+if (place_meeting(x, y, obj_platformbutton)) {
+    move_outside_solid(270, 1); // 270° = posun nahoru
+}
 
 // Kontrola, jestli postava vstoupila na obj_water
 if (place_meeting(x, y, obj_water)) {
