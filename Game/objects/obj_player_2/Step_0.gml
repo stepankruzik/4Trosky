@@ -72,3 +72,8 @@ if (place_meeting(x, y, obj_lava)) {
 // Aktualizace pozice postavy
 x += x_speed;
 y += y_speed;
+
+// Kontrola pro přechod do další místnosti, pokud jsou oba hráči u svých dveří
+if (place_meeting(x, y, obj_door_player) && place_meeting(obj_player_2.x, obj_player_2.y, obj_door_player_2)) {
+    room_goto_next();
+}

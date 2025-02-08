@@ -75,3 +75,8 @@ y += y_speed;
 if (!instance_exists(obj_player) || !instance_exists(obj_player_2)) {
     room_restart(); // Restart místnosti, pokud obě postavy zemřely
 }
+
+// Kontrola pro přechod do další místnosti, pokud jsou oba hráči u svých dveří
+if (place_meeting(x, y, obj_door_player) && place_meeting(obj_player_2.x, obj_player_2.y, obj_door_player_2)) {
+    room_goto_next();
+}
