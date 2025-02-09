@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_door_player_2",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_door_player_2",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite14",
-    "path":"sprites/Sprite14/Sprite14.yy",
+    "name":"spr_door_player_2",
+    "path":"sprites/spr_door_player_2/spr_door_player_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
