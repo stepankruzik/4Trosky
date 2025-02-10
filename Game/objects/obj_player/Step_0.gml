@@ -5,6 +5,7 @@ var on_ground = place_meeting(x, y + 1, obj_ground) ||
 
 x_speed = 0;
 
+
 // Pohyb vlevo nebo vpravo
 if (keyboard_check(ord("A"))) {
     x_speed = -2;
@@ -67,6 +68,7 @@ if (place_meeting(x, y, obj_water)) {
     // Alternativně můžete restartovat místnost:
     // room_restart();
 }
+
 
 // Aktualizace pozice postavy
 x += x_speed;
