@@ -9,6 +9,12 @@ if (place_meeting(x, y, obj_player)) {
     // Uložíme, že hráč 1 je připraven
     global.player1_ready = true;
 } else {
+    if (sprite_index != spr_door_player) {
+        sprite_index = spr_door_player;  
+        image_index = 0;
+        image_speed = 0; // Zastaví animaci
+    }
+    
     global.player1_ready = false;
 }
 
