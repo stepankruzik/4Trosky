@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Game",
   "resources":[
@@ -50,6 +50,8 @@
     {"id":{"name":"obj_ground_stonefill","path":"objects/obj_ground_stonefill/obj_ground_stonefill.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_inviswall","path":"objects/obj_inviswall/obj_inviswall.yy",},},
+    {"id":{"name":"obj_item_2","path":"objects/obj_item_2/obj_item_2.yy",},},
+    {"id":{"name":"obj_item_counter_2","path":"objects/obj_item_counter_2/obj_item_counter_2.yy",},},
     {"id":{"name":"obj_item_counter","path":"objects/obj_item_counter/obj_item_counter.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},
     {"id":{"name":"obj_lava","path":"objects/obj_lava/obj_lava.yy",},},
@@ -62,6 +64,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"spr_button_pressed","path":"sprites/spr_button_pressed/spr_button_pressed.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
+    {"id":{"name":"spr_counter_icon_2","path":"sprites/spr_counter_icon_2/spr_counter_icon_2.yy",},},
     {"id":{"name":"spr_counter_icon","path":"sprites/spr_counter_icon/spr_counter_icon.yy",},},
     {"id":{"name":"spr_door_player_2","path":"sprites/spr_door_player_2/spr_door_player_2.yy",},},
     {"id":{"name":"spr_door_player_open","path":"sprites/spr_door_player_open/spr_door_player_open.yy",},},
@@ -70,6 +73,7 @@
     {"id":{"name":"spr_ground_stone","path":"sprites/spr_ground_stone/spr_ground_stone.yy",},},
     {"id":{"name":"spr_ground_stonefill","path":"sprites/spr_ground_stonefill/spr_ground_stonefill.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
+    {"id":{"name":"spr_item_2","path":"sprites/spr_item_2/spr_item_2.yy",},},
     {"id":{"name":"spr_item","path":"sprites/spr_item/spr_item.yy",},},
     {"id":{"name":"spr_lava","path":"sprites/spr_lava/spr_lava.yy",},},
     {"id":{"name":"spr_menuButton","path":"sprites/spr_menuButton/spr_menuButton.yy",},},
