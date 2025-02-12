@@ -19,6 +19,11 @@ if (place_meeting(x, y, obj_player_2)) {
 }
 
 // Pokud jsou oba hráči připraveni, přejdi do další místnosti
-if (global.player1_ready && global.player2_ready) {
+/*if (global.player1_ready && global.player2_ready) {
     room_goto_next();
+}*/
+
+if (global.player1_ready && global.player2_ready) {
+    global.level_complete = true;
+    instance_create_layer(x, y, "UI", obj_level_end); // Vytvoření tabulky
 }

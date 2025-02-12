@@ -19,6 +19,13 @@ if (place_meeting(x, y, obj_player)) {
 }
 
 // Pokud jsou oba hráči připraveni, přejdi do další místnosti
-if (global.player1_ready && global.player2_ready) {
+/*if (global.player1_ready && global.player2_ready) {
     room_goto_next();
+}*/
+
+if (global.player1_ready && global.player2_ready) {
+    // Vytvoření tabulky statistik jen JEDNOU
+    if (!instance_exists(obj_level_end)) {
+        instance_create_depth(x, y, 0, obj_level_end);
+    }
 }
