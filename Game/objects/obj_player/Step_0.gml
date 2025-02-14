@@ -78,4 +78,7 @@ if (!instance_exists(obj_player) || !instance_exists(obj_player_2)) {
     room_restart(); // Restart místnosti, pokud obě postavy zemřely
 }
 
-//Kola pro přechod do další místnosti, pokud jsou oba hráči u svých dveří
+// když skočí na spike tak reset room 
+if (place_meeting(x, y, obj_spike)) {
+    room_restart();
+}

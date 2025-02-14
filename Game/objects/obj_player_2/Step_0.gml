@@ -74,4 +74,7 @@ x += x_speed;
 y += y_speed;
 
 
-// Kontrola pro přechod do další místnosti, pokud jsou oba hráči u svých dveří
+// když skočí na spike tak reset room 
+if (place_meeting(x, y, obj_spike)) {
+    room_restart();
+}
