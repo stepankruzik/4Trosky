@@ -16,6 +16,10 @@ if (moving && !going_up) {
         y -= platform_speed; // Vrátíme platformu o krok zpět, aby nepropadla
         moving = false;
     }
+	 if (place_meeting(x, y + 1, obj_ground_brown)) {
+        y -= platform_speed; // Vrátíme platformu o krok zpět, aby nepropadla
+        moving = false;
+    }
 }
 
 // Pohyb nahoru
