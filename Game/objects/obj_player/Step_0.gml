@@ -10,10 +10,14 @@ x_speed = 0;
 // Pohyb vlevo nebo vpravo
 if (keyboard_check(ord("A"))) {
     x_speed = -2;
+	sprite_index = spr_player_walk;
 }
 else if (keyboard_check(ord("D"))) {
     x_speed = 2;
+	sprite_index = spr_player_walk;
 }
+
+sprite_index = spr_player;
 
 if ((keyboard_check_pressed(ord("W"))) && on_ground) {
     y_speed = -8; // Skok

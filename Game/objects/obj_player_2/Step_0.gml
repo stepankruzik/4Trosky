@@ -9,10 +9,14 @@ x_speed = 0;
 // Pohyb postavy
 if (keyboard_check(vk_left)) {
     x_speed = -2;
+	sprite_index = spr_player2_walk;
 }
 else if (keyboard_check(vk_right)) {
     x_speed = 2;
+	sprite_index = spr_player2_walk;
 }
+
+sprite_index = spr_player_2;
 
 if ((keyboard_check_pressed(vk_up)) && on_ground) {
     y_speed = -8;
