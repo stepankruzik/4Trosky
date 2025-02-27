@@ -7,7 +7,7 @@ if (place_meeting(x, y, obj_player) ||
     obj_platformbutton.going_up = false; // Platforma jede dolů
 
     // Změna spritu tlačítka na zmáčknutý
-    sprite_index = spr_button_pressed;
+    sprite_index = spr_button2_pressed;
 }
 
 // Pokud je na tlačítku 2 hráč, hráč 2 nebo obj_ground_stone
@@ -30,7 +30,7 @@ if (!place_meeting(x, y, obj_player) &&
     obj_platformbutton.going_up = true;
 
     // Reset spritu tlačítka 1 na normální stav
-    sprite_index = spr_button;
+    sprite_index = spr_button2;
 }
 
 // Pokud na tlačítku 2 už není žádný objekt, platforma se vrátí nahoru
@@ -49,10 +49,10 @@ if (place_meeting(x, y, obj_player) ||
     place_meeting(obj_button2.x, obj_button2.y, obj_player_2) || 
     place_meeting(obj_button2.x, obj_button2.y, obj_ground_stone)) {
     // Změníme sprite na zmáčknutý
-    sprite_index = spr_button_pressed;
+    sprite_index = spr_button2_pressed;
     obj_platformbutton.y += 5;  // Pohyb platformy dolů
 } else {
     // Pokud hráč opustil tlačítko, změň sprite zpět na původní
-    sprite_index = spr_button;
+    sprite_index = spr_button2;
     obj_platformbutton.y -= 5;  // Pohyb platformy nahoru
 }
