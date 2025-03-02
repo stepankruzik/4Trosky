@@ -20,6 +20,10 @@ if (moving && !going_up) {
         y -= platform_speed; // Vrátíme platformu o krok zpět, aby nepropadla
         moving = false;
     }
+	 if (place_meeting(x, y + 1, obj_ice)) {
+        y -= platform_speed; // Vrátíme platformu o krok zpět, aby nepropadla
+        moving = false;
+    }
 }
 
 // Pohyb nahoru
@@ -42,7 +46,7 @@ if (going_up) {
     }
 }
 
-// ABRÁNÍME, ABY PLATFORM KILLNULA HRÁČE, KDYŽ JE POD NÍ
+// ZABRÁNÍME, ABY PLATFORM KILLNULA HRÁČE, KDYŽ JE POD NÍ
 if (place_meeting(x, y, obj_player)) {
     obj_player.y = y - obj_player.sprite_height; // Posune hráče nad platformu
 }
