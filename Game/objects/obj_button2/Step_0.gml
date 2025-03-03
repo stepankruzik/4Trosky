@@ -56,3 +56,4 @@ if (place_meeting(x, y, obj_player) ||
     sprite_index = spr_button2;
     obj_platformbutton.y -= 5;  // Pohyb platformy nahoru
 }
+
