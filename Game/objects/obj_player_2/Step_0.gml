@@ -4,7 +4,8 @@ var on_ground = place_meeting(x, y + 1, obj_ground) ||
                 place_meeting(x, y + 1, obj_ground_stonefill)||
                 place_meeting(x, y + 1, obj_ground_brown)||
                 place_meeting(x, y + 1, obj_ice)||
-                place_meeting(x, y + 1, obj_orange);
+                place_meeting(x, y + 1, obj_orange)||
+                place_meeting(x, y + 1, obj_green);
 
 x_speed = 0;
 
@@ -32,7 +33,8 @@ if (place_meeting(x + x_speed, y, obj_ground) ||
     place_meeting(x + x_speed, y, obj_ground_stonefill) || 
     place_meeting(x + x_speed, y, obj_ground_brown)|| 
     place_meeting(x + x_speed, y, obj_ice)|| 
-    place_meeting(x + x_speed, y, obj_orange)) {
+    place_meeting(x + x_speed, y, obj_orange)|| 
+    place_meeting(x + x_speed, y, obj_green)) {
     x_speed = 0;
 }
 
@@ -48,7 +50,8 @@ if (place_meeting(x + x_speed, y, obj_ground_stone)) {
             !place_meeting(stone.x + x_speed, stone.y, obj_ground_stonefill) &&
             !place_meeting(stone.x + x_speed, stone.y, obj_ground_brown)&&
             !place_meeting(stone.x + x_speed, stone.y, obj_ice)&&
-            !place_meeting(stone.x + x_speed, stone.y, obj_orange)) {
+            !place_meeting(stone.x + x_speed, stone.y, obj_orange)&&
+            !place_meeting(stone.x + x_speed, stone.y, obj_green)) {
             stone.x += x_speed; // Posuň kámen
         } else {
             x_speed = 0; // Nemůžeme kámen posunout
@@ -64,7 +67,8 @@ if (y_speed > 0 && (place_meeting(x, y + y_speed, obj_ground) ||
                     place_meeting(x, y + y_speed, obj_ground_stonefill)||
                     place_meeting(x, y + y_speed, obj_ground_brown)||
                     place_meeting(x, y + y_speed, obj_ice)||
-                    place_meeting(x, y + y_speed, obj_orange))) {
+                    place_meeting(x, y + y_speed, obj_orange)||
+                    place_meeting(x, y + y_speed, obj_green))) {
     y_speed = 0;
 } else if (y_speed < 0 && (place_meeting(x, y + y_speed, obj_ground) || 
                            place_meeting(x, y + y_speed, obj_ground_stone) ||
@@ -72,7 +76,8 @@ if (y_speed > 0 && (place_meeting(x, y + y_speed, obj_ground) ||
                            place_meeting(x, y + y_speed, obj_ground_stonefill)||
 						   place_meeting(x, y + y_speed, obj_ground_brown)||
 						   place_meeting(x, y + y_speed, obj_ice)||
-						   place_meeting(x, y + y_speed, obj_orange))) {
+						   place_meeting(x, y + y_speed, obj_orange)||
+						   place_meeting(x, y + y_speed, obj_green))) {
     y_speed = 0;
 }
 

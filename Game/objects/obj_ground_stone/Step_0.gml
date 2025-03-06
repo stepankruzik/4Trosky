@@ -5,6 +5,8 @@ if (!place_meeting(x, y + 1, obj_ground) &&
 	!place_meeting(x, y + 1, obj_player_2) &&
     !place_meeting(x, y + 1, obj_ground_stonefill)&&
     !place_meeting(x, y + 1, obj_ground_brown) &&
-    !place_meeting(x, y + 1, obj_ice)) {
+    !place_meeting(x, y + 1, obj_ice)&&
+    !place_meeting(x, y + 1, obj_orange)&&
+    !place_meeting(x, y + 1, obj_green)) {
     y += 4; // Rychlost pádu
 }
