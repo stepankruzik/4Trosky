@@ -23,6 +23,7 @@ sprite_index = spr_player_2;
 
 if ((keyboard_check_pressed(vk_up)) && on_ground) {
     y_speed = -8;
+	audio_play_sound(snd_jump, 1, false); 
 }
 
 // Gravitace
@@ -89,6 +90,7 @@ if (place_meeting(x, y, obj_platformbutton)) {
 // Kontrola, jestli postava vstoupila na obj_water
 if (place_meeting(x, y, obj_lava)) {
     instance_destroy(); // Zničí instanci postavy
+	audio_play_sound(snd_water_die, 1, false); 
     // Alternativně můžete restartovat místnost:
     // room_restart();
 }
@@ -100,5 +102,6 @@ y += y_speed;
 
 // když skočí na spike tak reset room 
 if (place_meeting(x, y, obj_spike)) {
+	audio_play_sound(snd_water_die, 1, false); 
     room_restart();
 }
