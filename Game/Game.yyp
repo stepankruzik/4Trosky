@@ -38,6 +38,7 @@
   "resources":[
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_normal","path":"fonts/fnt_normal/fnt_normal.yy",},},
+    {"id":{"name":"obj_back_button","path":"objects/obj_back_button/obj_back_button.yy",},},
     {"id":{"name":"obj_button_menu","path":"objects/obj_button_menu/obj_button_menu.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
@@ -66,6 +67,7 @@
     {"id":{"name":"obj_level_end","path":"objects/obj_level_end/obj_level_end.yy",},},
     {"id":{"name":"obj_level_menu","path":"objects/obj_level_menu/obj_level_menu.yy",},},
     {"id":{"name":"obj_menu_controller","path":"objects/obj_menu_controller/obj_menu_controller.yy",},},
+    {"id":{"name":"obj_menu_title","path":"objects/obj_menu_title/obj_menu_title.yy",},},
     {"id":{"name":"obj_orange","path":"objects/obj_orange/obj_orange.yy",},},
     {"id":{"name":"obj_platformbutton","path":"objects/obj_platformbutton/obj_platformbutton.yy",},},
     {"id":{"name":"obj_player_2","path":"objects/obj_player_2/obj_player_2.yy",},},
@@ -91,6 +93,7 @@
     {"id":{"name":"background_X","path":"sprites/background_X/background_X.yy",},},
     {"id":{"name":"background_Y","path":"sprites/background_Y/background_Y.yy",},},
     {"id":{"name":"background_Z","path":"sprites/background_Z/background_Z.yy",},},
+    {"id":{"name":"spr_back_button","path":"sprites/spr_back_button/spr_back_button.yy",},},
     {"id":{"name":"spr_border","path":"sprites/spr_border/spr_border.yy",},},
     {"id":{"name":"spr_button_pressed","path":"sprites/spr_button_pressed/spr_button_pressed.yy",},},
     {"id":{"name":"spr_button_reset_room","path":"sprites/spr_button_reset_room/spr_button_reset_room.yy",},},
@@ -129,6 +132,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_level1","path":"rooms/rm_level1/rm_level1.yy",},},
     {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
     {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
@@ -137,7 +141,6 @@
     {"roomId":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},},
     {"roomId":{"name":"rm_leveltest","path":"rooms/rm_leveltest/rm_leveltest.yy",},},
     {"roomId":{"name":"rm_leveltest2","path":"rooms/rm_leveltest2/rm_leveltest2.yy",},},
-    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
