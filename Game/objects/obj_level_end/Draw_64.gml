@@ -47,4 +47,6 @@ if (global.level_complete) {
     var blink_color = make_color_hsv((current_time div 10) mod 360, 255, 255);
     draw_set_color(blink_color);
     draw_text(430, 380, "Stiskni Enter pro pokračování!");
+	
 }  
+

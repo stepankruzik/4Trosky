@@ -110,3 +110,8 @@ if (place_meeting(x, y, obj_spike)) {
 	audio_play_sound(snd_water_die, 1, false); 
     room_restart();
 }
+
+if (global.player1_ready && global.player2_ready) {
+    global.level_complete = true;
+    instance_create_layer(x, y, "UI", obj_level_end); // Toto musí být provedeno
+}
