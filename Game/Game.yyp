@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Game",
   "resources":[
@@ -134,8 +134,8 @@
     {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
     {"roomId":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},},
     {"roomId":{"name":"rm_level5","path":"rooms/rm_level5/rm_level5.yy",},},
-    {"roomId":{"name":"rm_leveltest","path":"rooms/rm_leveltest/rm_leveltest.yy",},},
     {"roomId":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},},
+    {"roomId":{"name":"rm_leveltest","path":"rooms/rm_leveltest/rm_leveltest.yy",},},
     {"roomId":{"name":"rm_leveltest2","path":"rooms/rm_leveltest2/rm_leveltest2.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
   ],
