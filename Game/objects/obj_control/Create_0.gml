@@ -13,3 +13,12 @@ if (!variable_global_exists("completed_levels")) {
 if (!variable_global_exists("completed_levels")) {
     global.completed_levels = [];
 }
+
+// Inicializace globální proměnné pro pauzu a uložení aktuální místnosti
+global.room_paused = false; // Nastaví pauzu na false (hra není na pauze)
+global.current_room = room; // Uloží aktuální místnost
+
+// Globální proměnná pro uložení aktuální místnosti
+if (!global.room_paused) {
+    global.current_room = room; // Uložíme název aktuální místnosti
+}

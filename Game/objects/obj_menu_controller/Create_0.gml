@@ -22,3 +22,6 @@ for (var i = 0; i < array_length(global.completed_levels); i++) {
         obj_level_button
     ).level_number = i + 1; // Level 1 má i=0 => level_number=1
 }
+
+
+

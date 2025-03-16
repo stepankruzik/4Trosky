@@ -39,6 +39,7 @@
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_normal","path":"fonts/fnt_normal/fnt_normal.yy",},},
     {"id":{"name":"obj_back_button","path":"objects/obj_back_button/obj_back_button.yy",},},
+    {"id":{"name":"obj_button_continue","path":"objects/obj_button_continue/obj_button_continue.yy",},},
     {"id":{"name":"obj_button_menu","path":"objects/obj_button_menu/obj_button_menu.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
@@ -75,6 +76,7 @@
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},},
+    {"id":{"name":"rm_escape","path":"rooms/rm_escape/rm_escape.yy",},},
     {"id":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},},
     {"id":{"name":"rm_level1","path":"rooms/rm_level1/rm_level1.yy",},},
     {"id":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
@@ -141,6 +143,7 @@
     {"roomId":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},},
     {"roomId":{"name":"rm_leveltest","path":"rooms/rm_leveltest/rm_leveltest.yy",},},
     {"roomId":{"name":"rm_leveltest2","path":"rooms/rm_leveltest2/rm_leveltest2.yy",},},
+    {"roomId":{"name":"rm_escape","path":"rooms/rm_escape/rm_escape.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
