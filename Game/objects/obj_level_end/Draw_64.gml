@@ -37,10 +37,10 @@ if (global.level_complete) {
     draw_set_color(c_lime);
     draw_text(430, 230, "Čas: " + string(global.level_time div room_speed) + " sekund");
 
-    draw_set_color(c_aqua);
+    draw_set_color(c_orange);
     draw_text(430, 280, "Hráč 1 posbíral: " + string(global.item_count) + " předmětů");
 
-    draw_set_color(c_orange);
+    draw_set_color(c_aqua);
     draw_text(430, 320, "Hráč 2 posbíral: " + string(global.item2_count) + " předmětů");
 
     // Animovaný text pro stisknutí Enteru
